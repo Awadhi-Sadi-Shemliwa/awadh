@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="logo.jpg" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'rgb(100, 46, 1)',
+              secondary: 'rgb(163, 98, 0)',
+              lightgray: 'rgb(234, 233, 233)'
+            },
+            fontFamily: {
+              poppins: ['Poppins', 'sans-serif']
+            },
+            backgroundImage: {
+              'gradient-primary': 'linear-gradient(to right, rgb(234, 233, 233), rgb(163, 98, 0))'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SHEHITA</title>
+  </head>
+  <body class="max-w-[2000px] mx-auto antialiased">
+    <!-- Navigation -->
+    <section class="bg-gradient-primary">
+      <nav class="container mx-auto py-2">
+        <div class="flex flex-wrap justify-between items-center px-4">
+          <a href="Home.html" class="flex items-center">
+            <img src="logo-removebg-preview.png" alt="Logo" class="w-40" id="nav-img" />
+          </a>
+          <button 
+            class="md:hidden p-2 text-white focus:outline-none" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu"
+          >
+            <span class="block w-6 h-0.5 bg-white mb-1"></span>
+            <span class="block w-6 h-0.5 bg-white mb-1"></span>
+            <span class="block w-6 h-0.5 bg-white"></span>
+          </button>
+
+          <div class="hidden md:block w-full md:w-auto" id="navmenu">
+            <ul class="flex flex-col md:flex-row md:space-x-4 mt-4 md:mt-0 md:text-sm md:font-medium">
+              <li>
+                <a href="Home.html" class="text-white hover:text-gray-200 block py-2 text-lg">Home</a>
+              </li>
+              <li>
+                <a href="Home.html#about" class="text-white hover:text-gray-200 block py-2 text-lg">About</a>
+              </li>
+              <li>
+                <a href="Portfolio&Team.html" class="text-white hover:text-gray-200 block py-2 text-lg">Portfolio & Team</a>
+              </li>
+              <li>
+                <a href="Services&Contacts.html" class="text-white hover:text-gray-200 block py-2 text-lg">Services & Contacts</a>
+              </li>
+              <li>
+                <a href="Blog.html" class="text-white hover:text-gray-200 block py-2 text-lg">Blog</a>
+              </li>
+              <li>
+                <a href="Publications.html" class="text-white hover:text-gray-200 block py-2 text-lg">Publications</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- portfolio -->
+    <section id="portfolio" class="py-16 bg-gradient-primary">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10 relative">
+          Our Portfolio
+          <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-white mt-2"></span>
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105 group">
+            <div class="relative h-60 overflow-hidden">
+              <img src="it.jpg" alt="IT Service" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <h3 class="text-xl font-semibold text-white mb-2">IT Service</h3>
+                <p class="text-gray-200">Providing a range of IT solutions and services.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105 group">
+            <div class="relative h-60 overflow-hidden">
+              <img src="wholesale.jpg" alt="Trading" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <h3 class="text-xl font-semibold text-white mb-2">Trading</h3>
+                <p class="text-gray-200">Wholesale, retail trade, food processing, packaging involvement</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105 group">
+            <div class="relative h-60 overflow-hidden">
+              <img src="Management.jpg" alt="Management Consultancy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <h3 class="text-xl font-semibold text-white mb-2">Management Consultancy</h3>
+                <p class="text-gray-200">Risk management, strategy, quality, and retirement expertise</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105 group">
+            <div class="relative h-60 overflow-hidden">
+              <img src="transport.jpg" alt="Logistics" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <h3 class="text-xl font-semibold text-white mb-2">Logistics</h3>
+                <p class="text-gray-200">Transport, warehouse, travel and tour agency services</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105 group">
+            <div class="relative h-60 overflow-hidden">
+              <img src="service-bay.jpg" alt="Automobile" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <h3 class="text-xl font-semibold text-white mb-2">Automobile</h3>
+                <p class="text-gray-200">Specializing in auto spare parts and auto services.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105 group">
+            <div class="relative h-60 overflow-hidden">
+              <img src="compliance.jpg" alt="Business Compliance" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <h3 class="text-xl font-semibold text-white mb-2">Business Compliance</h3>
+                <p class="text-gray-200">Legal compliance for businesses: tax estimation, VAT returns, filings.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- team -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-16 relative">
+          OUR TEAM
+          <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary mt-2"></span>
+        </h2>
+        
+        <!-- Team Member 1 -->
+        <div class="mx-auto max-w-5xl mb-16">
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/3">
+              <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                <img src="photo1.jpg" alt="Sadi Shemliwa" class="w-full h-auto" />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-1">Sadi Shemliwa</h3>
+                  <p class="text-primary font-medium">EXECUTIVE CHAIRMAN</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="md:w-2/3">
+              <div class="bg-white p-6 rounded-xl h-full">
+                <p class="mb-4">
+                  Founder Director and Executive Chairman of SHEHITA, founder and Managing
+                  Director of Actuarial and Risk Consulting (T) Limited.
+                </p>
+                <p class="mb-4">
+                  Over twenty-four (24) years of experience working as Consultant in Strategic
+                  Planning, Risk Management, and Actuarial Valuation in Insurance and Pensions.
+                  Advises Board and Management in Strategic Planning and Risk Management. Advises
+                  both trustees and sponsors of employee benefits schemes in the areas of scheme
+                  design, funding strategies and valuation, and investment policy statement and
+                  strategy. Also advises both life and general (re)insurance companies in the areas of
+                  pricing and reserving, reinsurance optimization, and capital management and capital
+                  adequacy.
+                </p>
+                <p>
+                  Holds Master of Science Degree in Actuarial Management (MSc ActMgt) and Master of
+                  Science in Actuarial Science (MSc ActSci) from City University London; Master of Arts
+                  Degree in Economic Policy Management (MA-EPM) from Makerere University Kampala, and
+                  a Bachelor of Arts Degree in Statistics (BA Stat-Hons) from University of Dar es Salaam.
+                  Certified Enterprise Risk Manager (CERM) from Asia Risk Management Institute (ARiMI)
+                  and National University of Singapore (NUS).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="mx-auto max-w-5xl mb-16">
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/3">
+              <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                <img src="photo1.jpg" alt="Awadhi Sadi Shemliwa" class="w-full h-auto" />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-1">Awadhi Sadi Shemliwa</h3>
+                  <p class="text-primary font-medium">EXECUTIVE DIRECTOR</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="md:w-2/3">
+              <div class="bg-white p-6 rounded-xl h-full">
+                <p class="mb-4">
+                  Director of SHEHITA, currently a second year student at the UNIVERSITY OF DAR ES SALAAM
+                </p>
+                <p>
+                  Taking Bsc. Computer Science, he has some experience in making of websites and hosting and maintenance of the software part of the computer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="mx-auto max-w-5xl mb-16">
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/3">
+              <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                <img src="photo1.jpg" alt="Aisha Sadi Shemliwa" class="w-full h-auto" />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-1">Aisha Sadi Shemliwa</h3>
+                  <p class="text-primary font-medium">EXECUTIVE DIRECTOR</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="md:w-2/3">
+              <div class="bg-white p-6 rounded-xl h-full">
+                <p class="mb-4">
+                  Director and Secretary of SHEHITA, and Finance and Administration Executive of Actuarial and Risk Consulting (T) Limited.
+                </p>
+                <p>
+                  Aisha holds Bachelor of Business Administration from University of Dodoma in Tanzania. She is a finance and administration executive at Actuarial and Risk Consulting (T) Limited with three years of accounting and administrative-related issues experience. She is a student member of the National Board of Accountants and Auditors.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Team Member 4 -->
+        <div class="mx-auto max-w-5xl mb-16">
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/3">
+              <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                <img src="photo1.jpg" alt="Fatuma Adam" class="w-full h-auto" />
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-1">Fatuma Adam</h3>
+                  <p class="text-primary font-medium"></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="md:w-2/3">
+              <div class="bg-white p-6 rounded-xl h-full">
+                <p class="mb-4">
+                  With 2 years of experience of working as a consultant in accounting services and tax in value added tax (VAT) returns, payee & sdl returns, annual income tax estimation returns, monthly city service levy, withholding tax(WHT) & stamp duty returns, new company registration (BRELA), business registration(TIN), business license, WCF and NSSF. And cashier in processing and receiving payments, issuing receipts to customers, preparation of payment voucher for different payments.
+                </p>
+                <p>
+                  Holds ordinary diploma in accounting and finance from local Government Training Institute (LGTI) hombolo-Dodoma and intern-ship in Accounting services and Tax from Jmark consultancy and field practical in Accounting services from Tanzania port authority(TPA) and field practical in cashier from yombo vituka hospital.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h4 class="text-lg font-semibold mb-6 relative">
+              Links
+              <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-white -mb-2"></span>
+            </h4>
+            <ul class="space-y-2">
+              <li><a href="Home.html" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Home</a></li>
+              <li><a href="Home.html#about" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">About Us</a></li>
+              <li><a href="Services&Contacts.html" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Services</a></li>
+              <li><a href="Portfolio&Team.html" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Portfolio</a></li>
+              <li><a href="Portfolio&Team.html" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Team</a></li>
+              <li><a href="Services&Contacts.html" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Contacts</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-6 relative">
+              Our Services
+              <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-white -mb-2"></span>
+            </h4>
+            <ul class="space-y-2">
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Business Compliance</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Management Consultancy</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Automobile</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Logistics</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Trading</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">IT Services</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-6 relative">
+              Resources
+              <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-white -mb-2"></span>
+            </h4>
+            <ul class="space-y-2">
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Gallery</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">News Letter</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Charges and Fee</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-6 relative">
+              Social Media
+              <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-white -mb-2"></span>
+            </h4>
+            <p class="text-gray-400 mb-4">On Social Media We are available through</p>
+            <div class="flex space-x-4">
+              <a href="" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition duration-300 transform hover:scale-110">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition duration-300 transform hover:scale-110">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition duration-300 transform hover:scale-110">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Nav Toggle -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.querySelector('[data-bs-toggle="collapse"]');
+        const navMenu = document.getElementById('navmenu');
+        
+        menuButton.addEventListener('click', function() {
+          navMenu.classList.toggle('hidden');
+        });
+      });
+    </script>
+  </body>
+</html>

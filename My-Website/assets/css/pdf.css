@@ -1,0 +1,86 @@
+  /* Overlay background to cover entire screen */
+  #pdfOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+/* Popup container for PDF preview */
+#pdfPreviewContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 80%;
+    background: white;
+    z-index: 20;
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+
+/* Embed tag to display the PDF */
+#pdfPreview {
+    width: 100%;
+    height: 100%;
+}
+
+/* Close button for the popup */
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+/* Responsive styles */
+@media (min-width:768px) and (max-width: 1025px) {
+    #pdfPreviewContainer {
+        width: 90%;
+        height: 80%;
+    }
+
+    #closeButton {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #pdfPreviewContainer {
+        width: 98%;
+        height: 90%;
+    }
+
+    #closeButton {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}
+
+@media (min-width:485px) and (max-width: 768px) {
+    #pdfPreviewContainer {
+        width: 90%;
+        height: 70%;
+    }
+    #closeButton {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+
+ 

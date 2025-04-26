@@ -1,0 +1,28 @@
+#pagination {
+    text-align: center;
+  }
+  
+  #pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin: 3px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  #pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 477px) {
+    h1 {
+      font-size: 38px;
+    }
+  
+    h2 {
+      font-size: 32px;
+    }
+  }

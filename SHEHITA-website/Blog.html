@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.jpg" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'rgb(100, 46, 1)',
+              secondary: 'rgb(163, 98, 0)',
+              lightgray: 'rgb(234, 233, 233)'
+            },
+            fontFamily: {
+              poppins: ['Poppins', 'sans-serif']
+            },
+            backgroundImage: {
+              'gradient-primary': 'linear-gradient(to right, rgb(234, 233, 233), rgb(163, 98, 0))'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SHEHITA BLOG</title>
+</head>
+<body class="max-w-[2000px] mx-auto antialiased">
+    <!-- Navigation -->
+    <section class="bg-gradient-primary">
+      <nav class="container mx-auto py-2">
+        <div class="flex flex-wrap justify-between items-center px-4">
+          <a href="Home.html" class="flex items-center">
+            <img src="logo-removebg-preview.png" alt="Logo" class="w-40" id="nav-img" />
+          </a>
+          <button 
+            class="md:hidden p-2 text-white focus:outline-none" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu"
+          >
+            <span class="block w-6 h-0.5 bg-white mb-1"></span>
+            <span class="block w-6 h-0.5 bg-white mb-1"></span>
+            <span class="block w-6 h-0.5 bg-white"></span>
+          </button>
+
+          <div class="hidden md:block w-full md:w-auto" id="navmenu">
+            <ul class="flex flex-col md:flex-row md:space-x-4 mt-4 md:mt-0 md:text-sm md:font-medium">
+              <li>
+                <a href="Home.html" class="text-white hover:text-gray-200 block py-2 text-lg">Home</a>
+              </li>
+              <li>
+                <a href="Home.html#about" class="text-white hover:text-gray-200 block py-2 text-lg">About</a>
+              </li>
+              <li>
+                <a href="Portfolio&Team.html" class="text-white hover:text-gray-200 block py-2 text-lg">Portfolio & Team</a>
+              </li>
+              <li>
+                <a href="Services&Contacts.html" class="text-white hover:text-gray-200 block py-2 text-lg">Services & Contacts</a>
+              </li>
+              <li>
+                <a href="Blog.html" class="text-white hover:text-gray-200 block py-2 text-lg">Blog</a>
+              </li>
+              <li>
+                <a href="Publications.html" class="text-white hover:text-gray-200 block py-2 text-lg">Publications</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold mb-10 text-center relative">
+                NEWS LETTER AND GALLERY
+                <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-primary mt-2"></span>
+            </h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                <!-- Content placeholder - can be replaced with actual blog posts or gallery items -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105">
+                    <div class="h-48 bg-gradient-primary"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Coming Soon</h3>
+                        <p class="text-gray-600">Our blog content is currently under development. Check back soon for updates!</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105">
+                    <div class="h-48 bg-gradient-primary"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Coming Soon</h3>
+                        <p class="text-gray-600">Our gallery will be available shortly. Stay tuned!</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:scale-105">
+                    <div class="h-48 bg-gradient-primary"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Coming Soon</h3>
+                        <p class="text-gray-600">More exciting content is on its way!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h4 class="text-lg font-semibold mb-6 relative">
+              Links
+              <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-white -mb-2"></span>
+            </h4>
+            <ul class="space-y-2">
+              <li><a href="Home.html" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Home</a></li>
+              <li><a href="Home.html#about" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">About Us</a></li>
+              <li><a href="Services&Contacts.html" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Services</a></li>
+              <li><a href="Portfolio&Team.html" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Portfolio</a></li>
+              <li><a href="Portfolio&Team.html" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Team</a></li>
+              <li><a href="Services&Contacts.html" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Contacts</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-6 relative">
+              Our Services
+              <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-white -mb-2"></span>
+            </h4>
+            <ul class="space-y-2">
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Business Compliance</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Management Consultancy</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Automobile</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Logistics</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Trading</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">IT Services</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-6 relative">
+              Resources
+              <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-white -mb-2"></span>
+            </h4>
+            <ul class="space-y-2">
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Gallery</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">News Letter</a></li>
+              <li><a href="" class="text-gray-400 hover:text-white transition duration-300 hover:pl-2">Charges and Fee</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-6 relative">
+              Social Media
+              <span class="absolute bottom-0 left-0 w-12 h-0.5 bg-white -mb-2"></span>
+            </h4>
+            <p class="text-gray-400 mb-4">On Social Media We are available through</p>
+            <div class="flex space-x-4">
+              <a href="" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition duration-300 transform hover:scale-110">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition duration-300 transform hover:scale-110">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition duration-300 transform hover:scale-110">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Nav Toggle -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.querySelector('[data-bs-toggle="collapse"]');
+        const navMenu = document.getElementById('navmenu');
+        
+        menuButton.addEventListener('click', function() {
+          navMenu.classList.toggle('hidden');
+        });
+      });
+    </script>
+</body>
+</html>
